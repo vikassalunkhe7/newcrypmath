@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from criptomo.com/en/calculator/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Aug 2021 09:57:48 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8"> <!-- begin SEO -->
+    <title>▷ Bitcoin and Crypto Profit Calculator | CRYPTOMATH</title>
+    <meta name="description" content="💵 Bitcoin Returns Calculator, Ethereum Calculator. Crypto Investment Profits.">
+    <meta name="author" content="">
+    <meta property="og:locale" content="es">
+    <meta property="og:site_name" content="CRYPTOMATH">
+    <meta property="og:title" content="▷ Bitcoin and Crypto Profit Calculator">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
+    <meta property="og:description"
+        content="💵 Bitcoin Returns Calculator, Ethereum Calculator. Crypto Investment Profits.">
+    <meta property="og:image" content="../../images/pages/calculator.webp">
+    <meta property="og:type" content="article">
+    <meta name="google-site-verification" content="JN4EGGyUz-6deV8bY40-FqwE_4xwc4k7I4oCaUr7HhU" /> <!-- end SEO -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="preload" href="../../fonts/icomoonb1db.ttf?lc16yo" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="../../css/calculator1731.css?1628160368435303516" as="style" />
+    <link rel="stylesheet" href="../../css/calculator1731.css?1628160368435303516" />
+    <link rel="canonical" href="index.html">
+    <link rel="stylesheet" href="../../navbar.css" as="style" />
+    <link rel="alternate" type="application/rss+xml" title="CRIPTOMO Feed" href="../../feed.xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+</head>
+<style>
+    div#calculator-results {
+    color: white;
+}
+label {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+td {
+    color: white;
+}
+    td.dataTables_empty {
+    text-align: center;
+}
+    div#investment-table_length {
+    display: none;
+}
+div#investment-table_info {
+    display: none;
+}
+div#investment-table_paginate {
+    display: none;
+}
+div#investment-table_filter {
+    display: none;
+}
+    .footer{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #263238;
+    text-align: center;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    margin-top: 24px;
+}
+
+.icons{
+    padding-top: 1rem;
+}
+
+.icons a{
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 0.5rem;
+    color: #f4f4f4;
+}
+
+.company-name{
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 500px){
+    html{
+        font-size: 50%;
+    }
+}    
+
+@media(min-width: 501px) and (max-width: 768px){
+    html{
+    font-size: 50%;
+    }
+} 
+    select{
+	background-color: #4a4873;
+	color: #dcbd6b;
+	border-radius: .5rem;
+	cursor: pointer;
+	border: none;
+	/*Aqui quito flecha del input*/
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-image: URL('down-arrow.png');
+	background-repeat: no-repeat;
+	background-size: 17px;
+    
+	background-position: right 1.2rem top 50%;
+    box-shadow: 4px 4px 5px rgba(255, 255, 255, 0.3) inset,
+							-4px -4px 5px rgba(0, 0, 0, 0.1) inset,
+							10px 40px 40px rgba(0, 0, 0, 0.1);
+                            width: 19%;
+
+}
+
+button, input, textarea {
+	background-color: #4a4873;
+	color: #dcbd6b;
+	border-radius: .5rem;
+	cursor: pointer;
+	border: none;
+	/*Aqui quito flecha del input*/
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-repeat: no-repeat;
+	background-size: 17px;
+	background-position: right 1.2rem top 50%;
+    box-shadow: 4px 4px 5px rgba(255, 255, 255, 0.3) inset,
+							-4px -4px 5px rgba(0, 0, 0, 0.1) inset,
+							10px 40px 40px rgba(0, 0, 0, 0.1)
+
+}
+    h2 {
+    font-size: 30px;
+    margin: 0;
+}
+:root
+{
+    --e_blue: #16569a;
+    --e_light: #FAFAFA;
+}
+.my-wrap{
+  font-family: 'Poppins', sans-serif;
+}
+.custom-form
+{
+    position: relative;
+    margin-bottom: 1rem;
+}
+.custom-form > .custom-form-label > label
+{
+    position: relative;
+    padding: 0.2rem 1.5rem;
+    text-align: center;
+    font-size: 60%;
+    margin-bottom: 0;
+}
+.custom-form > .custom-form-label > label
+{
+    color: #fff;
+    background: var(--e_blue);
+}
+.custom-form > .custom-form-label > label::before
+{
+    top: 4px;
+    left: -12px;
+    border-radius: 6px 0 0 0;
+    transform: rotate(35deg);
+    background: linear-gradient(145deg, var(--e_blue) 56%, #ffffff00 50%);
+}
+.custom-form > .custom-form-label > label::before
+{
+    background: linear-gradient(145deg, var(--e_blue) 56%, #ffffff00 50%);
+}
+.custom-form > .custom-form-label > label::before,.custom-form > .custom-form-label > label::after
+{
+    position: absolute;
+    content: '';
+    display: block;
+    width: 31px;
+    height: 31px;
+}
+.custom-form > .custom-form-label > label::after
+{
+    top: 4px;
+    right: -12px;
+    border-radius: 0 6px 0 0;
+    transform: rotate(-35deg);
+    background: linear-gradient(215deg, #fff 56%, #ffffff00 50%);
+}
+.custom-form > .custom-form-label > label::after
+{
+    background: linear-gradient(215deg, var(--e_blue) 56%, #ffffff00 50%);
+}
+.custom-form-panel
+{
+    height: 90%;
+}
+.custom-form > .custom-form-control
+{
+    padding: .6rem 1rem;
+    border-radius: 7px;
+    min-width: 295px;
+    text-align: center;
+}
+.custom-form > .custom-form-control
+{
+    border: solid 2px var(--e_blue);
+    color: var(--e_blue);
+    background: #FAFAFA;
+}
+
+*:focus
+{
+  outline: none;
+}
+</style>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../../CRYPTOMATH.png" style="filter: drop-shadow(2px 4px 6px black);">
+      </div>
+    
+      <ul class="nav-list">
+        <li class="nav-item ">
+            <a class="nav-link" href="../calculator/index.html">Calculator</a> </li>
+        </li>
+
+        <li class="nav-item active">
+            <a class="nav-link" href="../investment/investment.html">Advance Calculator</a> </li>
+        </li>
+        
+        <li class="nav-item ">
+            <a class="nav-link" href="../price-converter/converter.html">Multi Price Converter</a> </li>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../icos/index.html">ICO</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../index.html">News and Blogs</a> </li>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../cryptocurrencies/index.html">Cryptocurrencies</a> </li>
+        </li>
+        <!-- <li class="nav-item ">
+            <a class="nav-link" href="../marketcaps/index.html">Marketcaps</a> </li>
+        </li> -->
+    
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="../investment/index.html">Investment</a> 
+        </li> -->
+        <li class="nav-item">
+             <a class="nav-link" href="../fire-calculator/index.html">FIRE</a>
+        </li>
+
+        
+    </ul>
+    <div class="menu-bars" id="toggle">
+    <input type="checkbox">
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+    </nav>
+    <header class="site-header">
+        <!-- <div class="inner"> <span  class="site-title"><a class="logo-text"  href="../index.html">CRYPTOMATH</a></span>
+            <p class="site-description"> Technology, Bitcoin, cryptocurrencies and investments. </p>
+        </div> -->
+    </header>
+    <link rel="preload" as="image" href="../../images/pages/calculator.webp" />
+    <div class="site-content">
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org/",
+                "datePublished": "",
+                "@type": "Review",
+                "itemReviewed": {
+                    "@type": "Course",
+                    "image": "https://criptomo.com/images/pages/calculator.webp",
+                    "name": "▷ Bitcoin and Crypto Profit Calculator",
+                    "description": "💵 Bitcoin Returns Calculator, Ethereum Calculator. Crypto Investment Profits."
+                },
+                "reviewRating": {
+                    "@type": "Rating",
+                    "ratingValue": "5",
+                    "ratingCount": 39
+                },
+                "name": "A good seafood place.",
+                "author": {
+                    "@type": "Organization",
+                    "name": "CRIPTOMO"
+                }
+            }
+        </script>
+        <div class="inner">
+            <main class="site-main" style="background: rgb(37, 50, 57);
+            text-align: center;
+            padding: 28px 37px;
+            border-radius: 13px;
+            animation: tronFilter 12s infinite;
+            fill: #000000;
+            stroke: #666;
+            stroke-width: 5;
+            stroke-linecap: round;
+            stroke-linejoin: bevel;">
+                <article class="post">
+                    <!-- <header class="entry-header ">
+                        <div class="entry-header-wrap"> <img class="post-thumbnail" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" style="background-image: url(/images/pages/investment.webp); width: calc(100%);"
+                                alt="Cryptocurrency Investment Portfolio">
+                            <h1 class="entry-title">Cryptocurrency Investment Portfolio</h1>
+                        </div>
+                    </header> -->
+                    <!-- .entry-header -->
+                    <div class="entry-content ">
+                        <h1 style="    text-align: center;
+                        color: white;">▷ Bitcoin and Crypto Profit Calculator</h1>
+                        <div style="margin: 20px">
+                            <div > <small>To calculate punctual investments please use our <a href="/en/calculator">simple calculator</a>.</small> </div>
+                        </div>
+                        <div class="calculator-block" style="margin-bottom: 20px">
+                            <div class="calculator-form-row" style="margin-bottom: 20px">
+                                <div class="calculator-col-start"> <label for="invest-quantity" style="margin-bottom: 20px">If you had invested</label> </div>
+                                <div class="calculator-col-end"> <input id="invest-quantity" type="number" value="1000" /> <select id="invest-fiat"> <option>USD</option> <option>EUR</option> </select> </div>
+                            </div>
+                            <div class="calculator-form-row">
+                                <div class="calculator-col-start"> <label for="invest-currency">in the cryptocurrency</label> </div>
+                                <div class="calculator-col-end"> <select id="invest-currency" onchange="updateInputMinDate()"> <option value="BTC" min="2010-07-18">Bitcoin</option> <option value="ETH" min="2015-08-08" disabled="">Ethereum</option> <option value="LTC" min="2013-09-15" disabled="">Litecoin</option> <option value="IOT" min="2017-06-14" disabled="">IOTA</option> <option value="XMR" min="2015-01-27" disabled="">Monero</option> <option value="DASH" min="2014-02-04" disabled="">Dash</option> <option value="XRP" min="2015-01-30" disabled="">Ripple</option> <option class="editable" disabled="">Other asset...</option> </select>                                    <input width="150" class="calculator-othercoins" autofocus="" /> </div>
+                            </div>
+                            <div class="calculator-othercoins"><span>It's possible not every cryptocurrency is supported by the API.</span></div>
+                            <div class="calculator-form-row">
+                                <!-- <div class="calculator-col-start"> <label for="invest-interval">every </label> </div> -->
+                                <div class="calculator-col-end"> <select id="invest-interval"> <option value="9999">Only one time</option> <option value="1">Day</option> <option value="7">Week</option> <option value="30">Month</option> <option value="365">Year</option> </select>
+                                    <div
+                                        class="calculator-col-start" style="display:inline"> <label for="invest-date">starting on the </label> </div>
+                                <div class="calculator-col-end" style="display:inline"> <input id="invest-date" type="date" value="2014-12-10" min="2010-07-18" /> </div>
+                            </div>
+                        </div>
+                        <div class="loader calculator-loader-container"></div>
+                        <div class="calculator-result-container"> <button class="calculate-button" onclick="calculateEarnings()">Calculate</button>
+                            <div id="calculator-results"> You would now have a total of <span id="result-tokencount"></span> <span id="result-tokentype"></span> with a value of <span id="result-currentvalue"></span> <span id="result-fiat"></span>. </div>
+                            <p> <span class="error coin-error">This cryptocurrency is not covered by our system.</span> <span class="error date-error">This date is not included in our register.</span> </p>
+                        </div>
+                    </div>
+                    <table id="investment-table" class="display" width="100%"></table>
+                    <div class="ad-space">
+                        <!-- Calculator Banner -->
+                        <div class="lazy-load-ad" data-slot="1002456567"></div>
+                    </div>
+                    <script src="../js/jquery1731.js"></script>
+                    <script src="../js/lang1731.js"></script>
+                    <script defer="" src="../js/calculator-common1731.js"></script>
+                    <script defer="" src="../js/invest1731.js"></script>
+                    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.js"></script>
+                    <script type="text/javascript" src="https://cdn.datatables.net/plug-ins/1.10.16/api/processing().js"></script>
+                    <script type="text/javascript" src="https://cdn.datatables.net/responsive/2.2.1/js/dataTables.responsive.min.js"></script>
+        </div>
+        <!-- .entry-content -->
+        </article>
+        <!-- .post -->
+        </main>
+        <!-- .site-main -->
+        
+        <!-- .sidebar -->
+    </div>
+    </div><!-- .site-content -->
+    <footer class="footer">
+        <div class="icons">
+           <a href="#"><i class="fab fa-facebook"></i></a>
+           <a href="#"><i class="fab fa-linkedin"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+           <a href="#"><i class="fab fa-twitter"></i></a>
+            <p class="company-name">
+                ABC &copy; 2021, ALL Rights Reserved <a style="color: burlywood;
+                font-size: 16px;">CRYPTOMATH</a>
+            </p>
+        </div>
+    </footer>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TV5P5BH');
+    </script> <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager (noscript) --> <noscript><iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TV5P5BH" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript> <!-- End Google Tag Manager (noscript) -->
+    <script defer id="mcjs">
+        ! function (c, h, i, m, p) {
+            m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(
+                m, p)
+        }(document, "script",
+            "../../../chimpstatic.com/mcjs-connected/js/users/b9de4a6450813cafe2bddbf2b/60c797cb12a5c763c13429d62.js");
+    </script>
+        <script>
+            const menuToggle= document.querySelector(".menu-bars");
+            const nav = document.querySelector("nav ul");
+            
+            
+            menuToggle.addEventListener("click", () => {
+              nav.classList.toggle("slide");
+              });
+                    </script>
+    <script defer src="../../js/essentials1731.js?1628160368435303516"></script>
+    <script defer async src="../../js/tp1731.js?1628160368435303516"></script>
+</body>
+<!-- Mirrored from criptomo.com/en/calculator/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Aug 2021 09:57:49 GMT -->
+
+</html>

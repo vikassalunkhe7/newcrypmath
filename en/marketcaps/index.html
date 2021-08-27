@@ -1,0 +1,1517 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from criptomo.com/en/marketcaps/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Aug 2021 09:57:48 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="utf-8"> <!-- begin SEO -->
+    <title>Marketcaps | CRIPTOMO</title>
+    <meta name="description" content="Cryptocurrency market cap rankings, charts, and more. Bitcoin, Ethereum, Ripple…">
+    <meta name="author" content="">
+    <meta property="og:locale" content="es">
+    <meta property="og:site_name" content="CRIPTOMO">
+    <meta property="og:title" content="Marketcaps">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
+    <meta property="og:description"
+        content="Cryptocurrency market cap rankings, charts, and more. Bitcoin, Ethereum, Ripple…">
+    <meta property="og:image" content="../../images/pages/marketcaps.webp">
+    <meta property="og:type" content="article">
+    <meta name="google-site-verification" content="JN4EGGyUz-6deV8bY40-FqwE_4xwc4k7I4oCaUr7HhU" /> <!-- end SEO -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="preload" href="../../fonts/icomoonb1db.ttf?lc16yo" as="font" crossorigin="anonymous" />
+    <link rel="preload" href="../../css/main1731.css?1628160368435303516" as="style" />
+    <link rel="stylesheet" href="../../css/main1731.css?1628160368435303516" />
+    <link rel="canonical" href="index.html">
+    <link rel="stylesheet" href="../../navbar.css" as="style" />
+    <link rel="alternate" type="application/rss+xml" title="CRIPTOMO Feed" href="../../feed.xml">
+</head>
+
+<style>
+    h2 {
+    font-size: 30px;
+    margin: 0;
+}
+</style>
+
+<body>
+    <nav>
+        <div class="logo">
+        <h2>Fatihwin</h2>
+      </div>
+    
+      <ul class="nav-list">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Blog</a> </li>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../cryptocurrencies/index.html">Cryptocurrencies</a> </li>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="../marketcaps/index.html">Marketcaps</a> </li>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="../calculator/index.html">Calculator</a> </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../investment/index.html">Investment</a> 
+        </li>
+        <li class="nav-item">
+             <a class="nav-link" href="../fire-calculator/index.html">FIRE</a>
+        </li>
+        <li class="nav-item">
+             <a class="nav-link" href="../icos/index.html">ICO</a>
+         </li>
+        
+    </ul>
+    <div class="menu-bars" id="toggle">
+    <input type="checkbox">
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+    </nav>
+    <header class="site-header">
+        <div class="inner"> <span class="site-title"><a class="logo-text" href="../index.html">CRIPTOMO</a></span>
+            <p class="site-description"> Technology, Bitcoin, cryptocurrencies and investments. </p>
+        </div><!-- .inner -->
+    </header>
+    <link rel="preload" as="image" href="../../images/pages/marketcaps.webp" />
+    <div class="site-content">
+        <div class="inner">
+            <main class="site-main" style="width: 100%">
+                <article class="post">
+                    <header class="entry-header no-margins ">
+                        <div class="entry-header-wrap"> <img class="post-thumbnail"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
+                                style="background-image: url(../../images/pages/marketcaps.webp); width: calc(100%);"
+                                alt="Marketcaps">
+                            <h1 class="entry-title">Marketcaps</h1>
+                        </div><!-- .entry-header-wrap -->
+                    </header><!-- .entry-header -->
+                    <div class="entry-content no-margins ">
+                        <p><small class="error api-error">Conexion error, your Adblock blocks the marketcaps
+                                API.</small></p>
+                        <div class="marketcaps-table-top">
+                            <div class="marketcaps-table-filter"> <label> Search <input type="search"
+                                        id="marketcaps-filter-input" /> </label> </div>
+                            <div class="marketcaps-table-currency"> <label> Currency <select
+                                        id="marketcaps-currency-select">
+                                        <option value="EUR">EUR</option>
+                                        <option value="USD">USD</option>
+                                        <option value="BTC">BTC</option>
+                                        <option value="ETH">ETH</option>
+                                    </select> </label> </div>
+                            <div class="marketcaps-table-pagelength"> <label> Items <select
+                                        id="marketcaps-pagelength-select">
+                                        <option value="10">10</option>
+                                        <option value="25">25</option>
+                                        <option value="50">50</option>
+                                        <option selected="selected" value="100">100</option>
+                                    </select> </label> </div>
+                        </div>
+                        <table id="marketcaps-table" class="display" width="100%"></table>
+                        <div class="marketcaps-table-footer"> <a href="https://coinmarketcap.com/" rel="nofollow">More
+                                marketcaps</a> </div>
+                        <script type="text/javascript" src="../../js/jquery1731.js?1628160368435303516"></script>
+                        <script type="text/javascript"
+                            src="../../../cdn.datatables.net/v/dt/dt-1.10.16/datatables.min.js"></script>
+                        <script type="text/javascript"
+                            src="../../../cdn.datatables.net/plug-ins/1.10.16/api/processing().js"></script>
+                        <script type="text/javascript"
+                            src="../../../cdn.datatables.net/responsive/2.2.1/js/dataTables.responsive.min.js"></script>
+                        <script>
+                            const coins = {
+                                "btc": {
+                                    "name": "Bitcoin (BTC)",
+                                    "icon": "bitcoin-64.png",
+                                    "website": "https://bitcoin.org",
+                                    "class": "currency",
+                                    "description": "La primera criptomoneda creada en 2008. Permite enviar y recibir fondos sin intermediarios. No tiene un punto de control centralizado puesto que está dirigida por la comunidad.",
+                                    "description-en": "The first cryptocurrency created in 2008. without intermediaries. It does not have a centralized control point since it is run by the community.",
+                                    "article": "/que-es-bitcoin/"
+                                },
+                                "eth": {
+                                    "name": "Ethereum (ETH)",
+                                    "icon": "eth-64.png",
+                                    "website": "https://www.ethereum.org/",
+                                    "class": "dapps",
+                                    "description": "Plataforma para crear y ejecutar contratos inteligentes, es decir, aplicaciones que se autoejecutan sin posibilidad de censura o interferencia cuando se cumplen ciertas condiciones.",
+                                    "description-en": "Platform to create and execute smart contracts, that is, applications that self-execute when certain conditions are met without the possibility of censorship or interference.",
+                                    "article": "/que-es-ethereum/",
+                                    "ico-price": "0.311",
+                                    "ico-raised": "15571000",
+                                    "ico-date-start": "2014-07-22",
+                                    "ico-date-end": "2014-08-30"
+                                },
+                                "bch": {
+                                    "name": "Bitcoin Cash (BCH)",
+                                    "icon": "bch-64.png",
+                                    "website": "https://www.bitcoin.com",
+                                    "class": "currency",
+                                    "description": "Un fork de Bitcoin creado para intentar solucionar el problema de escalabilidad subiendo su tamaño de bloque. Pretende sustituir al Bitcoin original.",
+                                    "description-en": "A Bitcoin fork created to try to solve the scalability problem by increasing its block size. It aims to replace the original Bitcoin.",
+                                    "article": "/que-es-bitcoin-cash/"
+                                },
+                                "bsv": {
+                                    "name": "Bitcoin Satoshi Vision (BSV)",
+                                    "icon": "bsv.png",
+                                    "website": "https://bitcoinsv.io/",
+                                    "class": "currency",
+                                    "description": "Un fork de Bitcoin Cash creado para intentar solucionar el problema de escalabilidad subiendo su tamaño de bloque. Pretende sustituir al Bitcoin original.",
+                                    "description-en": "A Bitcoin Cash fork created to try to solve the scalability problem by increasing its block size. It aims to replace the original Bitcoin."
+                                },
+                                "dash": {
+                                    "name": "DASH (DASH)",
+                                    "icon": "dash-64.png",
+                                    "website": "https://www.dash.org/",
+                                    "class": "currency",
+                                    "description": "Dinero digital diseñado para ser rápido, seguro y con privacidad adicional. Su funcionamiento se basa en la confianza hacia los Masternodes.",
+                                    "description-en": "Digital money designed to be fast, secure and with additional privacy. Its operation is based on trust towards Masternodes.",
+                                    "article": "/que-es-dash/"
+                                },
+                                "ada": {
+                                    "name": "Cardano (ADA)",
+                                    "icon": "ada-64.png",
+                                    "website": "https://www.cardanohub.org/",
+                                    "class": "dapps",
+                                    "description": "Blockchain para aplicaciones descentralizadas y contratos inteligentes enfocada en capas independientes y supervisada por modelos de revisión academicos.",
+                                    "description-en": "Blockchain for decentralized applications and smart contracts focused on independent layers and supervised by academic review models.",
+                                    "article": "/que-es-cardano/",
+                                    "ico-price": "0.0024",
+                                    "ico-raised": "62240000",
+                                    "ico-date-start": "2017-10-01",
+                                    "ico-date-end": "2018-1-1"
+                                },
+                                "ltc": {
+                                    "name": "Litecoin (LTC)",
+                                    "icon": "ltc-64.png",
+                                    "website": "https://litecoin.com/",
+                                    "class": "currency",
+                                    "description": "Fork de Bitcoin más ligero y rápido creado por Charlie Lee.",
+                                    "description-en": "Less secure but faster Bitcoin fork, created by Charlie Lee.",
+                                    "article": "/que-es-litecoin/"
+                                },
+                                "miota": {
+                                    "name": "IOTA (IOTA)",
+                                    "icon": "miota-64.png",
+                                    "website": "https://iota.org/",
+                                    "class": "iot",
+                                    "description": "Plataforma para dispositivos del Internet of Things que promete microtransacciones gratuitas que funcionan sin intervención humana.",
+                                    "description-en": "Platform for Internet of Things devices that promises free microtransactions that work without human intervention.",
+                                    "article": "/que-es-iota/",
+                                    "ico-price": "0.00059",
+                                    "ico-raised": "434511",
+                                    "ico-date-start": "2015-11-15",
+                                    "ico-date-end": "2015-12-20"
+                                },
+                                "xrp": {
+                                    "name": "Ripple (XRP)",
+                                    "icon": "xrp-64.png",
+                                    "website": "https://ripple.com/",
+                                    "class": "finance",
+                                    "description": "Un sistema de pagos para los bancos y otros proveedores de pagos. Diseñado para mover grandes cantidades de dinero de manera rápida y eficiente. Muy centralizado.",
+                                    "description-en": "A payment system for banks and other payment providers. Designed to move large amounts of money quickly and efficiently. Highly centralized.",
+                                    "article": "/que-es-ripple/"
+                                },
+                                "xlm": {
+                                    "name": "Stellar Lumens (XLM)",
+                                    "icon": "xlm-64.png",
+                                    "website": "https://www.stellar.org/",
+                                    "class": "finance",
+                                    "description": "Asociación sin ánimo de lucro para facilitar a cualquier persona realizar pagos a través de los bancos. Están trabajando en envíos de dinero a través de mensajes de texto con el móvil.",
+                                    "description-en": "Non-profit association to make it easier for anyone to make payments through banks. They are working on sending money through text messages with the mobile.",
+                                    "article": "/que-es-stellar-lumens/"
+                                },
+                                "eos": {
+                                    "name": "EOS (EOS)",
+                                    "icon": "eos-64.png",
+                                    "website": "https://eos.io/",
+                                    "class": "dapps",
+                                    "description": "Plataforma para construir aplicaciones descentralizadas, escalables y con librerías conjuntas.",
+                                    "description-en": "Platform to build decentralized applications, scalable and with joint libraries.",
+                                    "article": "/que-es-eos/",
+                                    "ico-price": "0.99",
+                                    "ico-raised": "4100000000"
+                                },
+                                "xtz": {
+                                    "name": "Tezos (XTZ)",
+                                    "icon": "xtz-64.png",
+                                    "website": "https://tezos.com/",
+                                    "class": "dapps",
+                                    "description": "Plataforma para construir aplicaciones descentralizadas y contratos inteligentes.",
+                                    "description-en": "Platform to build decentralized applications and smart apps.",
+                                    "article": "/que-es-tezos/",
+                                    "article-en": "/what-is-tezos/",
+                                    "ico-price": "0.50",
+                                    "ico-raised": "232000000"
+                                },
+                                "xem": {
+                                    "name": "NEM (XEM)",
+                                    "icon": "xem-64.png",
+                                    "website": "http://nem.io/",
+                                    "class": "dapps business",
+                                    "description": "Plataforma para negocios y desarrolladores que quieren construir aplicaciones descentralizadas y conectarlas al Blockchain mediante herramientas prefabricadas.",
+                                    "description-en": "Platform for businesses and developers who want to build decentralized applications and connect them to the Blockchain using prefabricated tools.",
+                                    "article": "/que-es-nem/"
+                                },
+                                "btg": {
+                                    "name": "Bitcoin Gold (BTG)",
+                                    "icon": "btg-64.png",
+                                    "website": "https://bitcoingold.org/",
+                                    "class": "currency",
+                                    "description": "Fork de Bitcoin que cambia el modelo de minado para que sea más descentralizado, compite con Vertcoin.",
+                                    "description-en": "Bitcoin fork that changes the mining model to make it more decentralized, competes with Vertcoin",
+                                    "article": "/conseguir-bitcoin-gold/"
+                                },
+                                "bcp": {
+                                    "name": "Bitcoin Private",
+                                    "icon": "btcp.png",
+                                    "website": "https://btcprivate.org/",
+                                    "class": "private currency",
+                                    "description": "Fork de Bitcoin y Z-Classic que trae consigo Z-Snarks y tamaños de bloque de 2MB.",
+                                    "description-en": "Bitcoin and Z-Classic fork that brings Z-Snarks and 2MB block sizes.",
+                                    "article": "/que-es-zcash#btcp"
+                                },
+                                "icx": {
+                                    "name": "ICON (ICX)",
+                                    "icon": "icx-64.png",
+                                    "website": "https://www.icon.foundation/",
+                                    "class": "dapps",
+                                    "description": "Plataforma Sur-Coreana de aplicaciones descentralizadas que construye comunidades entre bancos, hospitales, universidades y aseguradoras. Se enfoca en verificaciones de identidad y pagos.",
+                                    "description-en": "South-Korean platform of decentralized applications that builds communities between banks, hospitals, universities and insurance companies. It focuses on identity checks and payments.",
+                                    "ico-price": "0.41",
+                                    "ico-raised": "45000000"
+                                },
+                                "neo": {
+                                    "name": "NEO (NEO)",
+                                    "icon": "neo-64.png",
+                                    "website": "https://neo.org/",
+                                    "class": "dapps",
+                                    "description": "Anteriormente conocida como Antshares, se trata del Ethereum chino y se enfoca en aplicaciones descentralizadas.",
+                                    "description-en": "Formerly known as Antshares, it is the Chinese Ethereum and focuses on decentralized applications.",
+                                    "ico-price": "0.032",
+                                    "ico-raised": "556500",
+                                    "ico-date-start": "2015-10-01",
+                                    "ico-date-end": ""
+                                },
+                                "nano": {
+                                    "name": "Nano (NANO)",
+                                    "icon": "nano-64.png",
+                                    "website": "https://raiblocks.net/",
+                                    "class": "currency",
+                                    "description": "Anteriormente Raiblocks. Plataforma no basada en tecnología Blockchain diseñada para transacciones rápidas y gratuitas. Es fácilmente escalable.",
+                                    "description-en": "Formerly Raiblocks. Platform not based on Blockchain technology designed for fast and free transactions. It is easily scalable.",
+                                    "article": "/que-es-nano/"
+                                },
+                                "xmr": {
+                                    "name": "Monero (XMR)",
+                                    "icon": "xmr-64.png",
+                                    "website": "https://getmonero.org/",
+                                    "class": "private currency",
+                                    "description": "Plataforma de pagos muy segura, totalmente privada y no traceable. A diferencia de con Bitcoin no se pueden conocer los balances de las cuentas o los detalles de las transacciones.",
+                                    "description-en": "Very secure, totally private and non-traceable payment platform. Unlike with Bitcoin, account balances or transaction details cannot be known.",
+                                    "article": "/que-es-monero/"
+                                },
+                                "etc": {
+                                    "name": "Ethereum Classic (ETC)",
+                                    "icon": "etc-64.png",
+                                    "website": "https://ethereumclassic.github.io/",
+                                    "class": "dapps",
+                                    "description": "Fork de Ethereum creado despues del hack del DAO (en realidad es el código original de Ethereum) por una comunidad que asegura que el código de un smart contract debe ser inmutable.",
+                                    "description-en": "Ethereum fork created after the DAO hack (it is actually the original Ethereum code) by a community that ensures that the code of a smart contract must be immutable."
+                                },
+                                "lsk": {
+                                    "name": "LISK (LSK)",
+                                    "icon": "lsk-64.png",
+                                    "website": "https://lisk.io/",
+                                    "class": "dapps",
+                                    "description": "Plataforma que permite crear aplicaciones descentralizadas con Javascript.",
+                                    "description-en": "Platform that allows you to create decentralized applications with Javascript.",
+                                    "ico-price": "0.076",
+                                    "ico-raised": "6500000",
+                                    "ico-date-start": "2016-02-22",
+                                    "ico-date-end": "2016-03-20"
+                                },
+                                "ant": {
+                                    "name": "Aragon (ANT)",
+                                    "icon": "ant-64.png",
+                                    "website": "https://aragon.one/",
+                                    "class": "business",
+                                    "description": "Organizaciones imparables sin fronteras directamente en el blockchain.",
+                                    "description-en": "Unstoppable organizations without borders directly on the blockchain.",
+                                    "article": "/que-es-aragon/",
+                                    "ico-price": "0.92",
+                                    "ico-raised": "73000000"
+                                },
+                                "qtum": {
+                                    "name": "Qtum (QTUM)",
+                                    "icon": "qtum-64.png",
+                                    "website": "https://qtum.org/en/",
+                                    "class": "business dapps",
+                                    "description": "Híbrido entre Bitcoin y Ethereum enfocado a contratos inteligentes empresariales. Compite con Ethereum.",
+                                    "description-en": "Hybrid between Bitcoin and Ethereum focused on business smart contracts. Compete with Ethereum.",
+                                    "ico-price": "0.292",
+                                    "ico-raised": "15664829",
+                                    "ico-date-start": "2017-03-16",
+                                    "ico-date-end": "2017-05-15"
+                                },
+                                "hsr": {
+                                    "name": "Hshare (HSR)",
+                                    "icon": "hsr-64.png",
+                                    "website": "https://h.cash/",
+                                    "class": "currency exchange interblockchain",
+                                    "description": "Plataforma que permite intercambio de fondos o información entre distintos blockchains.",
+                                    "description-en": "Platform that allows exchange of funds or information between different blockchains."
+                                },
+                                "omg": {
+                                    "name": "OmiseGO (OMG)",
+                                    "icon": "omg-64.png",
+                                    "website": "https://omg.omise.co/",
+                                    "class": "currency finance",
+                                    "description": "Permite a la gente utilizar servicios financieros clásicos sin necesidad de tener un banco. Funciona tanto con fiat como con criptomonedas.",
+                                    "description-en": "It allows people to use classic financial services without having a bank. It works with both fiat and cryptocurrencies.",
+                                    "ico-price": "0.244",
+                                    "ico-raised": "25000000",
+                                    "ico-date-start": "2017-06-23",
+                                    "ico-date-end": "2017-06-23"
+                                },
+                                "zec": {
+                                    "name": "Zcash (ZEC)",
+                                    "icon": "zec-64.png",
+                                    "website": "https://z.cash/",
+                                    "class": "private currency",
+                                    "description": "Plataforma de pagos que esconde al emisor, receptor y el valor de la transacción, aunque permite hacer la transacción pública más tarde opcionalmente.",
+                                    "description-en": "Payment platform that hides the issuer, receiver and the value of the transaction, although it allows to make the public transaction later optionally.",
+                                    "article": "/que-es-zcash/"
+                                },
+                                "zcl": {
+                                    "name": "Z Classic (ZCL)",
+                                    "icon": "zcl.png",
+                                    "website": "https://zclassic.org/",
+                                    "class": "private currency",
+                                    "description": "Fork de Z-Cash sin recompensa a los fundadores.",
+                                    "description-en": "Z-Cash fork without reward to the founders",
+                                    "article": "/que-es-zcash#zcl"
+                                },
+                                "usdt": {
+                                    "name": "Tether (USDT)",
+                                    "icon": "usdt-64.png",
+                                    "website": "https://tether.to/",
+                                    "class": "finance",
+                                    "description": "Criptomoneda basada en el dólar, su valor es siempre de 1$.",
+                                    "description-en": "Cryptocurrency based on the dollar, its value is always $1."
+                                },
+                                "mkr": {
+                                    "name": "Maker (MKR)",
+                                    "icon": "mkr.png",
+                                    "website": "https://makerdao.com/",
+                                    "class": "finance",
+                                    "description": "Moneda estable frente al dólar mediante el uso de smart contracts.",
+                                    "description-en": "Stable currency against the dollar through the use of smart contracts."
+                                },
+                                "bcc": {
+                                    "name": "BitConnect (BCC)",
+                                    "icon": "bcc-64.png",
+                                    "website": "https://bitconnectcoin.co/",
+                                    "class": "gaming",
+                                    "description": "Ya extinta, plataforma que producia retornos diarios a usuarios que prestaban su dinero. Pirámide escamidal.",
+                                    "description-en": "Already extinct, platform that gave daily benefits to users for lending their money. Pyramid scheme."
+                                },
+                                "waves": {
+                                    "name": "Waves (WAVES)",
+                                    "icon": "waves-64.png",
+                                    "website": "https://wavesplatform.com/",
+                                    "class": "exchange crowdfunding",
+                                    "description": "Plataforma que permite crear y distribuir tokens a cualquier persona aunque no tenga conocimientos técnicos.",
+                                    "description-en": "Platform that allows to create and distribute tokens to anyone even if they do not have technical knowledge.",
+                                    "ico-price": "0.188",
+                                    "ico-raised": "16000000",
+                                    "ico-date-start": "2016-04-12",
+                                    "ico-date-end": "2016-05-31"
+                                },
+                                "ppt": {
+                                    "name": "Populous (PPT)",
+                                    "icon": "ppt-64.png",
+                                    "website": "http://populous.co/",
+                                    "class": "business finance",
+                                    "description": "Plataforma de gestión de facturas para empresarios.",
+                                    "description-en": "Invoice management platform for entrepreneurs."
+                                },
+                                "strat": {
+                                    "name": "Stratis (STRAT)",
+                                    "icon": "strat-64.png",
+                                    "website": "http://stratisplatform.com/",
+                                    "class": "business",
+                                    "description": "Plataforma para crear blockchain corporativas en C#.",
+                                    "description-en": "Platform for creating corporate blockchain in C#.",
+                                    "ico-price": "0.007",
+                                    "ico-raised": "610908",
+                                    "ico-date-start": "2016-06-12",
+                                    "ico-date-end": "2018-1-1"
+                                },
+                                "ark": {
+                                    "name": "Ark (ARK)",
+                                    "icon": "ark-64.png",
+                                    "website": "http://ark.io/",
+                                    "class": "interblockchain",
+                                    "description": "Plataforma para conectar todas las criptomonedas con una interfaz muy simple.",
+                                    "description-en": "Platform to connect all cryptocurrencies with a very simple interface.",
+                                    "ico-price": "0.010",
+                                    "ico-raised": "950000",
+                                    "ico-date-start": "2016-11-07",
+                                    "ico-date-end": "2016-12-31"
+                                },
+                                "kmd": {
+                                    "name": "Komodo (KMD)",
+                                    "icon": "kmd-64.png",
+                                    "website": "https://komodoplatform.com/",
+                                    "class": "crowdfunding",
+                                    "description": "Plataforma de crowdfunding mediante ICOs para startups.",
+                                    "description-en": "Crowdfunding platform through ICOs for startups.",
+                                    "ico-price": "0.376",
+                                    "ico-raised": "1983781",
+                                    "ico-date-start": "2016-10-15",
+                                    "ico-date-end": "2016-11-16"
+                                },
+                                "bts": {
+                                    "name": "Bitshares (BTS)",
+                                    "icon": "bts-64.png",
+                                    "website": "https://bitshares.org/",
+                                    "class": "exchange",
+                                    "description": "Exchange descentralizado.",
+                                    "description-en": "Decentralized exchange."
+                                },
+                                "steem": {
+                                    "name": "Steem (STEEM)",
+                                    "icon": "steem-64.png",
+                                    "website": "https://steem.io/",
+                                    "class": "social",
+                                    "description": "Red social con recompensas monetarias por dar contenido de valor.",
+                                    "description-en": "Social network with monetary rewards for providing valuable content."
+                                },
+                                "gnt": {
+                                    "name": "Golem (GNT)",
+                                    "icon": "gnt-64.png",
+                                    "website": "https://golem.network/",
+                                    "class": "computing",
+                                    "description": "Alquiler de poder computacional a cambio de tokens.",
+                                    "description-en": "Rental of computing power in exchange for tokens.",
+                                    "ico-price": "0.01",
+                                    "ico-raised": "8595000",
+                                    "ico-date-start": "2016-11-13",
+                                    "ico-date-end": "2016-11-13"
+                                },
+                                "ardr": {
+                                    "name": "Ardor (ARDR)",
+                                    "icon": "ardr-64.png",
+                                    "website": "https://www.ardorplatform.org/",
+                                    "class": "business",
+                                    "description": "Blockchain para crear otras blockchains. Diseñado para organizaciones gubernamentales o empresas.",
+                                    "description-en": "Blockchain to create other blockchains. Designed for government organizations or companies."
+                                },
+                                "bcn": {
+                                    "name": "Bytecoin (BCN)",
+                                    "icon": "bcn-64.png",
+                                    "website": "https://bytecoin.org/",
+                                    "class": "private currency",
+                                    "description": "Predecesor de Monero. Moneda enfocada en la privacidad.",
+                                    "description-en": "Monero's predecessor. Currency focused on privacy."
+                                },
+                                "req": {
+                                    "name": "Request (REQ)",
+                                    "icon": "req-64.png",
+                                    "website": "https://request.network/",
+                                    "class": "finance",
+                                    "description": "Plataforma para solicitar pagos en cualquier criptomoneda.",
+                                    "description-en": "Platform to request payments in any cryptocurrency.",
+                                    "ico-price": "0.07",
+                                    "ico-raised": "33000000"
+                                },
+                                "dcr": {
+                                    "name": "Decred (DCR)",
+                                    "icon": "dcr-64.png",
+                                    "website": "https://www.decred.org/",
+                                    "class": "currency",
+                                    "description": "Bitcoin pero con sistema de votación para que la comunidad elija su trayectoria.",
+                                    "description-en": "Bitcoin but with voting system for the community to choose its trajectory."
+                                },
+                                "rep": {
+                                    "name": "Augur (REP)",
+                                    "icon": "augur.png",
+                                    "website": "http://www.augur.net/",
+                                    "class": "gaming",
+                                    "description": "Plataforma descentralizada para hacer apuestas.",
+                                    "description-en": "Decentralized platform for placing bets.",
+                                    "ico-price": "0.602",
+                                    "ico-raised": "5000000",
+                                    "ico-date-start": "2015-08-16",
+                                    "ico-date-end": "2015-9-30"
+                                },
+                                "salt": {
+                                    "name": "Salt (SALT)",
+                                    "icon": "salt-64.png",
+                                    "website": "https://www.saltlending.com/",
+                                    "class": "finance",
+                                    "description": "Plataforma de préstamos basados en criptomonedas.",
+                                    "description-en": "Loan platform based on cryptocurrencies.",
+                                    "article": "/que-es-salt/",
+                                    "ico-price": "0.89",
+                                    "ico-raised": "48500000"
+                                },
+                                "maid": {
+                                    "name": "MaidSafeCoin (MAID)",
+                                    "icon": "maidsafecoin.png",
+                                    "website": "http://maidsafe.net/",
+                                    "class": "storage computing web",
+                                    "description": "Alquiler de almacenamiento distribuido. Dropbox descentralizado y hosting web.",
+                                    "description-en": "Rental of distributed storage. Decentralized dropbox and web hosting"
+                                },
+                                "sc": {
+                                    "name": "Siacoin (SC)",
+                                    "icon": "sc-64.png",
+                                    "website": "http://sia.tech/",
+                                    "class": "storage",
+                                    "description": "Dropbox descentralizado.",
+                                    "description-en": "Decentralized Dropbox."
+                                },
+                                "storj": {
+                                    "name": "Storj (STORJ)",
+                                    "icon": "storj.png",
+                                    "website": "https://storj.io/",
+                                    "class": "storage",
+                                    "description": "Dropbox descentralizado, competidor de Siacoin y MaidSafeCoin.",
+                                    "description-en": "Decentralized dropbox, competitor of Siacoin and MaidSafeCoin.",
+                                    "ico-price": "0.01",
+                                    "ico-raised": "37000000"
+                                },
+                                "fil": {
+                                    "name": "Filecoin (FIL)",
+                                    "icon": "fil-64.png",
+                                    "website": "https://filecoin.io/",
+                                    "class": "storage",
+                                    "description": "Dropbox descentralizado.",
+                                    "description-en": "Decentralized dropbox.",
+                                    "ico-price": "5",
+                                    "ico-raised": "257000000"
+                                },
+                                "prl": {
+                                    "name": "Oyster Pearl (PRL)",
+                                    "icon": "prl-64.png",
+                                    "website": "https://oysterprotocol.com/",
+                                    "class": "storage ads",
+                                    "description": "Dropbox descentralizado y alternativa a la publicidad web. Ya extinta.",
+                                    "description-en": "Decentralized dropbox and alternative to web advertising. Already extinct.",
+                                    "article": "/que-es-oyster/"
+                                },
+                                "opq": {
+                                    "name": "Opacity (OPQ)",
+                                    "icon": "opq-64.png",
+                                    "website": "https://opacity.io/",
+                                    "class": "storage",
+                                    "description": "Fork de PRL. Dropbox descentralizado.",
+                                    "description-en": "Fork of PRL. Decentralized dropbox."
+                                },
+                                "fct": {
+                                    "name": "Factom (FCT)",
+                                    "icon": "factom.jpg",
+                                    "website": "http://factom.org/",
+                                    "class": "storage",
+                                    "description": "Sistema de almacenamiento de archivos distribuido para empresas que busquen mayor transparencia.",
+                                    "description-en": "Distributed file storage system for companies seeking greater transparency."
+                                },
+                                "vtc": {
+                                    "name": "Vertcoin (VTC)",
+                                    "icon": "vertcoin.png",
+                                    "website": "http://vertcoin.org/",
+                                    "class": "currency",
+                                    "description": "Clon de Bitcoin con modificaciones a su sistema de Proof of Work para que sea más descentralizado, compite con Bitcoin Gold.",
+                                    "description-en": "Bitcoin clone with modifications to its Proof of Work system to make it more decentralized, competes with Bitcoin Gold."
+                                },
+                                "pivx": {
+                                    "name": "PIVX (PIVX)",
+                                    "icon": "pivx.png",
+                                    "website": "http://www.pivx.org/",
+                                    "class": "currency",
+                                    "description": "Clon de DASH con inflación constante y controlada que utiliza PoS en lugar de PoW.",
+                                    "description-en": "DASH clone with constant and controlled inflation that uses PoS instead of PoW"
+                                },
+                                "mco": {
+                                    "name": "CRYPTO (MCO)",
+                                    "icon": "mco-64.png",
+                                    "website": "https://crypto.com/",
+                                    "class": "card finance",
+                                    "description": "Tarjeta de débito que transforma criptomonedas en fiat en el momento del pago.",
+                                    "description-en": "Debit card that transforms cryptocurrencies into fiat at the time of payment.",
+                                    "article": "/que-es-crypto/",
+                                    "article-en": "/what-is-crypto/"
+                                },
+                                "pay": {
+                                    "name": "TenX (PAY)",
+                                    "icon": "pay-64.png",
+                                    "website": "https://www.tenx.tech/",
+                                    "class": "card",
+                                    "description": "Tarjeta de débito para pagar con criptomonedas. Competidora de Monaco.",
+                                    "description-en": "Debit card to pay with cryptocurrencies. Monaco competitor.",
+                                    "article": "/tarjeta-debito-criptomonedas/",
+                                    "ico-price": "0.79",
+                                    "ico-raised": "51000000"
+                                },
+                                "veri": {
+                                    "name": "Veritaseum (VERI)",
+                                    "icon": "veritaseum.png",
+                                    "website": "http://veritas.veritaseum.com/",
+                                    "class": "finance",
+                                    "description": "Plataforma de inversión en bolsa sin necesidad de bancos o brokers.",
+                                    "description-en": "Stock exchange platform without banks or brokers"
+                                },
+                                "gas": {
+                                    "name": "Gas (GAS)",
+                                    "icon": "gas.jpg",
+                                    "website": "https://neo.org/",
+                                    "class": "dapps",
+                                    "description": "Usada para pagar tasas de la plataforma NEO.",
+                                    "description-en": "Used to pay NEO platform fees"
+                                },
+                                "bat": {
+                                    "name": "Basic Attention Token (BAT)",
+                                    "icon": "bat-64.png",
+                                    "website": "https://basicattentiontoken.org/",
+                                    "class": "ads",
+                                    "description": "Plataforma descentralizada de publicidad online utilizada por el navegador Brave.",
+                                    "description-en": "Decentralized online advertising platform used by the Brave browser.",
+                                    "ico-price": "0.04",
+                                    "ico-raised": "35000000"
+                                },
+                                "mona": {
+                                    "name": "MonaCoin (MONA)",
+                                    "icon": "mona-64.png",
+                                    "website": "http://monacoin.org/",
+                                    "class": "currency",
+                                    "description": "Moneda japonesa basada en un meme para microtransacciones. Similar a Dogecoin.",
+                                    "description-en": "Japanese currency based on a meme for microtransactions. Similar to Dogecoin"
+                                },
+                                "gbyte": {
+                                    "name": "Byteball (GBYTE)",
+                                    "icon": "gbyte.png",
+                                    "website": "https://byteball.org/",
+                                    "class": "dapps",
+                                    "description": "Plataforma para contratos inteligentes que permite pagos condicionales - si una acción ocurre se realiza un pago, si no ocurre se hace una devolución.",
+                                    "description-en": "Platform for smart contracts that allows conditional payments - if an action occurs a payment is made, if it does not occur a refund is made."
+                                },
+                                "doge": {
+                                    "name": "Dogecoin (DOGE)",
+                                    "icon": "doge-64.png",
+                                    "website": "http://dogecoin.com/",
+                                    "class": "currency",
+                                    "description": "Clon de Litecoin basado en un meme y usado para dar propinas.",
+                                    "description-en": "Litecoin clone based on a meme and used to tip."
+                                },
+                                "btcd": {
+                                    "name": "Bitcoin Dark (BTCD)",
+                                    "icon": "bitcoin-dark.png",
+                                    "website": "https://bitcoindark.life//",
+                                    "class": "exchange",
+                                    "description": "Exchange de bienes digitales enfocado en privacidad y libertad financiera.",
+                                    "description-en": "Exchange of digital goods focused on privacy and financial freedom."
+                                },
+                                "game": {
+                                    "name": "Gamecredits (GAME)",
+                                    "icon": "game.png",
+                                    "website": "http://gamecredits.com/",
+                                    "class": "currency gaming",
+                                    "description": "Moneda digital para desarrolladores de videojuegos y jugadores pensada para comercio de bienes digitales.",
+                                    "description-en": "Digital currency for video game developers and players designed to trade digital goods."
+                                },
+                                "etp": {
+                                    "name": "Metaverse (ETP)",
+                                    "icon": "metaverse.jpg",
+                                    "website": "https://mvs.org/",
+                                    "class": "apps finance social",
+                                    "description": "Ethereum chino enfocado en identidad digital.",
+                                    "description-en": "Chinese Ethereum focused on digital identity."
+                                },
+                                "wtc": {
+                                    "name": "Walton (WTC)",
+                                    "icon": "wtc-64.png",
+                                    "website": "http://www.waltonchain.org/",
+                                    "class": "iot business",
+                                    "description": "Blockchain para el internet de las cosas, similar a IOTA pero usa tecnología de RFID para monitorizar inventario.",
+                                    "description-en": "Blockchain for the internet of things, similar to IOTA but uses RFID technology to monitor inventory."
+                                },
+                                "icn": {
+                                    "name": "Iconomi (ICN)",
+                                    "icon": "icn.png",
+                                    "website": "https://www.iconomi.net/",
+                                    "class": "finance",
+                                    "description": "Permite creación de fondos de inversión basados en criptomonedas.",
+                                    "description-en": "It allows the creation of investment funds based on cryptocurrencies."
+                                },
+                                "sys": {
+                                    "name": "Syscoin (SYS)",
+                                    "icon": "sys-64.png",
+                                    "website": "http://syscoin.org/",
+                                    "class": "marketplace",
+                                    "description": "Marketplace descentralizado.",
+                                    "description-en": "Decentralized marketplace."
+                                },
+                                "trx": {
+                                    "name": "TRON (TRX)",
+                                    "icon": "trx-64.png",
+                                    "website": "https://tronlab.com/",
+                                    "class": "dapps gaming",
+                                    "description": "Plataforma de contratos inteligentes que conecta a consumidores con creadores en el mundo del ocio.",
+                                    "description-en": "Smart contract platform that connects consumers with creators in the world of leisure.",
+                                    "ico-price": "0.0019",
+                                    "ico-raised": "70000000",
+                                    "ico-date-start": "2017-08-31"
+                                },
+                                "xuc": {
+                                    "name": "Exchange Union (XUC)",
+                                    "icon": "xuc-64.png",
+                                    "website": "https://www.exchangeunion.com/",
+                                    "class": "exchange",
+                                    "description": "Plataforma que permite transferir bienes digitales entre exchanges.",
+                                    "description-en": "Platform that allows transfer of digital goods between exchanges."
+                                },
+                                "dgd": {
+                                    "name": "Digix DAO (DGD)",
+                                    "icon": "dgd-64.png",
+                                    "website": "https://digix.global/",
+                                    "class": "finance",
+                                    "description": "Los usuarios pueden comprar oro que será representado mediante tokens.",
+                                    "description-en": "Platform where users can buy gold that will be represented by tokens.",
+                                    "ico-price": "3.235",
+                                    "ico-raised": "5500000",
+                                    "ico-date-start": "2016-03-29",
+                                    "ico-date-end": "2016-03-30"
+                                },
+                                "powr": {
+                                    "name": "Power Ledger (POWR)",
+                                    "icon": "power.png",
+                                    "website": "https://powerledger.io/",
+                                    "class": "iot",
+                                    "description": "Plataforma de comercio de electricidad para viviendas con paneles solares u otros mecanismos de abastecimiento.",
+                                    "description-en": "Electricity trading platform for homes with solar panels or other supply mechanisms.",
+                                    "ico-price": "0.60",
+                                    "ico-raised": "34000000"
+                                },
+                                "rdn": {
+                                    "name": "Raiden (RDN)",
+                                    "icon": "rdn-64.png",
+                                    "website": "https://raiden.network/",
+                                    "description": "Tecnología que pretende incrementar la velocidad de la red de Ethereum.",
+                                    "description-en": "Technology that aims to increase the speed of the Ethereum network.",
+                                    "ico-price": "0.67",
+                                    "ico-raised": "33407260"
+                                },
+                                "bnb": {
+                                    "name": "Binance Coin (BNB)",
+                                    "icon": "bnb-64.png",
+                                    "website": "https://www.binance.com/",
+                                    "class": "exchange",
+                                    "description": "Moneda del exchange de Binance, se puede utilizar para pagar tasas de compra-venta de otras monedas en Binance.",
+                                    "description-en": "Binance exchange's currency, can be used to pay buy-sell rates of other currencies in Binance.",
+                                    "ico-price": "0.115",
+                                    "ico-raised": "15000000",
+                                    "ico-date-start": "2017-12-31",
+                                    "ico-date-end": "2017-12-31"
+                                },
+                                "kcs": {
+                                    "name": "KuCoin Shares (KCS)",
+                                    "icon": "kucoin-shares.png",
+                                    "website": "https://www.kucoin.com/",
+                                    "class": "exchange",
+                                    "description": "Moneda del exchange de Kucoin, se puede utilizar para pagar tasas de compra-venta de otras monedas en Kucoin.",
+                                    "description-en": "Currency of the Kucoin exchange, can be used to pay buy-sell rates of other currencies in Kucoin."
+                                },
+                                "nxt": {
+                                    "name": "NXT (NXT)",
+                                    "icon": "nxt-64.png",
+                                    "website": "https://nxtplatform.org/",
+                                    "class": "exchange marketplace",
+                                    "description": "Plataforma que permite intercambio de bienes digitales, marketplaces y un sistema de votación para la comunidad.",
+                                    "description-en": "Platform that allows the exchange of digital goods, marketplaces and a voting system for the community.",
+                                    "ico-price": "0.0000168",
+                                    "ico-raised": "16800",
+                                    "ico-date-start": "2013-09-28",
+                                    "ico-date-end": ""
+                                },
+                                "snt": {
+                                    "name": "Status (SNT)",
+                                    "icon": "status.png",
+                                    "website": "https://status.im/",
+                                    "class": "social dapps",
+                                    "description": "Interfaz para aplicaciones basadas en Ethereum con navegador y sistema de mensajería instantánea.",
+                                    "description-en": "Interface for Ethereum-based applications with browser and instant messaging system.",
+                                    "ico-price": "0.04",
+                                    "ico-raised": "108000000"
+                                },
+                                "knc": {
+                                    "name": "Kyber (KNC)",
+                                    "icon": "kyber.png",
+                                    "website": "https://kyber.network/",
+                                    "class": "exchange interblockchain",
+                                    "description": "Exchange descentralizado.",
+                                    "description-en": "Decentralized exchange.",
+                                    "ico-price": "1.85",
+                                    "ico-raised": "48960000"
+                                },
+                                "xzc": {
+                                    "name": "ZCoin (XZC)",
+                                    "icon": "zcoin.png",
+                                    "website": "https://zcoin.io/",
+                                    "class": "private currency",
+                                    "description": "Moneda para transacciones privadas que permite auditorías por la comunidad.",
+                                    "description-en": "Currency for private transactions that allows audits by the community."
+                                },
+                                "smart": {
+                                    "name": "SmartCash (SMART)",
+                                    "icon": "smartcash.png",
+                                    "website": "https://smartcash.cc/",
+                                    "class": "private currency",
+                                    "description": "Clon de ZCoin con recompensas monetarias.",
+                                    "description-en": "ZCoin clone with monetary rewards."
+                                },
+                                "ae": {
+                                    "name": "Aeternity (AE)",
+                                    "icon": "ae-64.png",
+                                    "website": "https://www.aeternity.com/",
+                                    "class": "interblockchain",
+                                    "description": "Plataforma de contratos inteligentes que utiliza el Blockchain sólo para resolver disputas.",
+                                    "description-en": "Smart contract platform used by the Blockchain only to resolve disputes."
+                                },
+                                "fun": {
+                                    "name": "FunFair (FUN)",
+                                    "icon": "fun.png",
+                                    "website": "https://funfair.io/",
+                                    "class": "gaming",
+                                    "description": "Casino descentralizado.",
+                                    "description-en": "Decentralized casino"
+                                },
+                                "drg": {
+                                    "name": "Dragon (DGR)",
+                                    "icon": "drg-64.png",
+                                    "website": "https://tokensale.drgtoken.io",
+                                    "class": "gaming currency",
+                                    "description": "Un nuevo modo de pago apoyado por la industria del juego de Macao.",
+                                    "description-en": "A new digital currency, funded upon Ethereum Blockchain system and strongly underpinned by a substantial gaming business in Macau.",
+                                    "ico-price": "3",
+                                    "ico-raised": "320000000"
+                                },
+                                "mana": {
+                                    "name": "Decentraland (MANA)",
+                                    "icon": "mana.png",
+                                    "website": "https://decentraland.org/",
+                                    "class": "gaming",
+                                    "description": "Juego virtual basado en blockchain del estilo de Second Life.",
+                                    "description-en": "Virtual game based on blockchain in the style of Second Life."
+                                },
+                                "btm": {
+                                    "name": "Bytom (BTM)",
+                                    "icon": "btm-64.png",
+                                    "website": "http://bytom.io/",
+                                    "class": "interblockchain",
+                                    "description": "Plataforma para digitalizar documentos legales.",
+                                    "description-en": "Platform to digitize legal documents."
+                                },
+                                "dgb": {
+                                    "name": "DigiByte (DGB)",
+                                    "icon": "dgb-64.png",
+                                    "website": "http://www.digibyte.io/",
+                                    "class": "storage",
+                                    "description": "Plataforma para almacenar información directamente en el blockchain de manera permanente.",
+                                    "description-en": "Platform to store information directly on the blockchain permanently."
+                                },
+                                "ht": {
+                                    "name": "Huobi Token (HT)",
+                                    "icon": "ht-64.ico",
+                                    "website": "https://www.huobi.com/en-us/",
+                                    "class": "exchange",
+                                    "description": "Exchange descentralizado construido en Singapour.",
+                                    "description-en": "Decentralized exchange built in Singapour.",
+                                    "ico-price": "1.52",
+                                    "ico-raised": "300000000"
+                                },
+                                "hdac": {
+                                    "name": "Hyundai DAC (HDAC)",
+                                    "icon": "hdac-64.png",
+                                    "website": "https://www.huobi.com/en-us/",
+                                    "class": "payment iot",
+                                    "description": "Moneda para realizar pagos en el IoT",
+                                    "description-en": "Currency to make payments in the IoT",
+                                    "ico-price": "0.81",
+                                    "ico-raised": "258000000"
+                                },
+                                "gno": {
+                                    "name": "Gnosis (GNO)",
+                                    "icon": "gno-64.png",
+                                    "website": "https://gnosis.pm/",
+                                    "class": "gaming",
+                                    "description": "Mercado de predicciones descentralizado.",
+                                    "description-en": "Decentralized prediction market.",
+                                    "ico-price": "25.51",
+                                    "ico-raised": "63000000"
+                                },
+                                "srn": {
+                                    "name": "Sirin Labs Token (SRN)",
+                                    "icon": "srn-64.png",
+                                    "website": "https://sirinlabs.com/",
+                                    "class": "payment",
+                                    "description": "Modo de pago en el ecosistema de los móviles de alta seguridad SIRIN.",
+                                    "description-en": "Payment method for the high security cell phones SIRIN ecosystem.",
+                                    "ico-price": "0.47",
+                                    "ico-raised": "157885825"
+                                },
+                                "gxs": {
+                                    "name": "GXShares (GXS)",
+                                    "icon": "gxs-64.png",
+                                    "website": "https://gxs.gxb.io/",
+                                    "class": "finance",
+                                    "description": "Plataforma de verificación de identidad descentralizada.",
+                                    "description-en": "Decentralized identity verification platform."
+                                },
+                                "bnt": {
+                                    "name": "Bancor (BNT)",
+                                    "icon": "bnt-64.png",
+                                    "website": "https://www.bancor.network/",
+                                    "class": "interblockchain",
+                                    "description": "Plataforma de intercambio de bienes digitales que todavía no han llegado a exchanges.",
+                                    "description-en": "Platform for the exchange of digital goods that have not yet reached exchanges.",
+                                    "ico-price": "3.86",
+                                    "ico-raised": "153000000"
+                                },
+                                "block": {
+                                    "name": "Blocknet (BLOCK)",
+                                    "icon": "block-64.png",
+                                    "website": "http://blocknet.co/",
+                                    "class": "interblockchain",
+                                    "description": "Sistema de comunicación entre blockchains.",
+                                    "description-en": "Blockchains communication system."
+                                },
+                                "cnx": {
+                                    "name": "Cryptonex (CNX)",
+                                    "icon": "cryptonex.png",
+                                    "website": "https://cryptonex.org/",
+                                    "class": "exchange",
+                                    "description": "Exchange de intercambio de fiat a criptomonedas.",
+                                    "description-en": "Exchange from fiat to cryptocurrencies."
+                                },
+                                "ethos": {
+                                    "name": "Ethos (ETHOS)",
+                                    "icon": "ethos-64.png",
+                                    "website": "https://www.ethos.io/",
+                                    "class": "social",
+                                    "description": "Wallet móvil con red social incluída.",
+                                    "description-en": "Mobile wallet with social network included."
+                                },
+                                "cvc": {
+                                    "name": "Civic (CVC)",
+                                    "icon": "civic.png",
+                                    "website": "https://www.civic.com/",
+                                    "class": "private",
+                                    "description": "Manejo de identidades digitales. Pretende reemplazar a los carnets de identidad y contraseñas.",
+                                    "description-en": "Management of digital identities. It aims to replace identity cards and passwords."
+                                },
+                                "zrx": {
+                                    "name": "0x (ZRX)",
+                                    "icon": "0x.png",
+                                    "website": "https://0xproject.com/",
+                                    "class": "exchange",
+                                    "description": "Exchange descentralizado.",
+                                    "description-en": "Decentralized Exchange",
+                                    "ico-price": "0.04801",
+                                    "ico-raised": "24000000",
+                                    "ico-date-start": "2017-08-15",
+                                    "ico-date-end": "2017-09-15"
+                                },
+                                "pura": {
+                                    "name": "Pura (PURA)",
+                                    "icon": "pura.png",
+                                    "website": "http://www.pura.one/",
+                                    "class": "currency",
+                                    "description": "Criptomoneda que recompensa a sus usuarios y cede un 10% a caridad.",
+                                    "description-en": "Cryptocurrency that rewards its users and yields 10% to charity."
+                                },
+                                "mtl": {
+                                    "name": "Metal (MTL)",
+                                    "icon": "metal.png",
+                                    "website": "https://www.metalpay.com/",
+                                    "class": "finance",
+                                    "description": "Pagos con el móvil con recompensas monetarias.",
+                                    "description-en": "Mobile payments with monetary rewards."
+                                },
+                                "emc2": {
+                                    "name": "Einsteinium (EMC2)",
+                                    "icon": "emc2-64.png",
+                                    "website": "https://www.emc2.foundation/",
+                                    "class": "crowdfunding",
+                                    "description": "Plataforma de crowdfunding que ofrece becas con el dinero recaudado mediante comisiones.",
+                                    "description-en": "Crowdfunding platform that offers scholarships with the money raised through commissions."
+                                },
+                                "lkk": {
+                                    "name": "Lykke (LKK)",
+                                    "icon": "lykke.png",
+                                    "website": "https://www.lykke.com/",
+                                    "class": "exchange",
+                                    "description": "Exchange inmediato con cero comisiones.",
+                                    "description-en": "Immediate exchange with zero commissions."
+                                },
+                                "xvg": {
+                                    "name": "Verge (XVG)",
+                                    "icon": "xvg-64.png",
+                                    "website": "https://vergecurrency.com/",
+                                    "class": "private currency",
+                                    "description": "Criptomoneda basada en la seguridad y la privacidad.",
+                                    "description-en": "Cryptocurrency based on security and privacy"
+                                },
+                                "ppc": {
+                                    "name": "Peercoin (PPC)",
+                                    "icon": "peercoin.png",
+                                    "website": "https://peercoin.net/",
+                                    "class": "currency",
+                                    "description": "Criptomoneda que recompensa a sus usuarios en función de cuántas monedas tienen y sistema de votación de la comunidad.",
+                                    "description-en": "Cryptocurrency that rewards its users based on how many currencies they have and the community voting system."
+                                },
+                                "data": {
+                                    "name": "Streamr (DATA)",
+                                    "icon": "data-64.png",
+                                    "website": "https://www.streamr.com/",
+                                    "class": "iot",
+                                    "description": "Intercambio de información entre dispositivos mediante steaming. Marketplace de información a tiempo real.",
+                                    "description-en": "Information exchange between devices through steaming. Real-time information marketplace."
+                                },
+                                "sngls": {
+                                    "name": "SingularDTV (SNGLS)",
+                                    "icon": "singularDTV.png",
+                                    "website": "https://singulardtv.com/",
+                                    "class": "gaming business crowdfunding",
+                                    "description": "Netflix descentralizado.",
+                                    "description-en": "Decentralized Netflix."
+                                },
+                                "san": {
+                                    "name": "Santiment (SAN)",
+                                    "icon": "san-64.png",
+                                    "website": "https://santiment.net/",
+                                    "class": "exchange finance",
+                                    "description": "Exchange con funciones adicionales de monitorización de mercado y análisis.",
+                                    "description-en": "Exchange with additional market monitoring and analysis functions."
+                                },
+                                "ven": {
+                                    "name": "VeChain (VEN)",
+                                    "icon": "ven-64.png",
+                                    "website": "https://www.vechain.com/",
+                                    "class": "iot business",
+                                    "description": "Sistema de manejo de inventario mediante blockchain.",
+                                    "description-en": "Inventory management system through blockchain."
+                                },
+                                "nxs": {
+                                    "name": "Nexus (NXS)",
+                                    "icon": "nxs-64.png",
+                                    "website": "http://www.nexusearth.com/",
+                                    "class": "currency",
+                                    "description": "Criptomoneda con blockchain permanente al ser transmitido mediante satelite. De esta manera aunque no hubiera internet seguiría funcionando.",
+                                    "description-en": "Cryptocurrency with permanent blockchain when transmitted via satellite. This way even if there was no internet it would still work."
+                                },
+                                "rdd": {
+                                    "name": "Reddcoin (RDD)",
+                                    "icon": "reddcoin.png",
+                                    "website": "https://www.reddcoin.com/",
+                                    "class": "social currency",
+                                    "description": "Moneda pensada para pagos en redes sociales.",
+                                    "description-en": "Currency designed for payments on social networks."
+                                },
+                                "zen": {
+                                    "name": "ZenCash (ZEN)",
+                                    "icon": "zen-64.png",
+                                    "website": "https://zensystem.io/",
+                                    "class": "currency private social",
+                                    "description": "Criptomoneda basada en la privacidad que permite publicar contenido anónimo online.",
+                                    "description-en": "Cryptocurrency based on privacy that allows you to publish anonymous content online.",
+                                    "article": "/que-es-zcash#zen"
+                                },
+                                "mnx": {
+                                    "name": "MinexCoin (MNX)",
+                                    "icon": "minexcoin.png",
+                                    "website": "https://minexcoin.com/",
+                                    "class": "exchange marketplace",
+                                    "description": "Criptomoneda que pretende arreglar los problemas de volatilidad de precio.",
+                                    "description-en": "Cryptocurrency that aims to fix price volatility problems."
+                                },
+                                "qsp": {
+                                    "name": "Quantstamp (QSP)",
+                                    "icon": "quantstamp.png",
+                                    "website": "https://quantstamp.com/",
+                                    "class": "dapps interblockchain",
+                                    "description": "Auditorías de smart contracts con informes públicos.",
+                                    "description-en": "Smart contract audits with public reports."
+                                },
+                                "r": {
+                                    "name": "Revain (R)",
+                                    "icon": "r.png",
+                                    "website": "https://revain.org/",
+                                    "class": "ads",
+                                    "description": "Plataforma de reviews descentralizada.",
+                                    "description-en": "Decentralized review platform."
+                                },
+                                "sub": {
+                                    "name": "Substratum (SUB)",
+                                    "icon": "sub-64.png",
+                                    "website": "https://substratum.net/",
+                                    "class": "web",
+                                    "description": "Hosting web descentralizado. Ofrece un Internet sin posibilidad de censura.",
+                                    "description-en": "Decentralized web hosting. It offers an Internet without the possibility of censorship."
+                                },
+                                "xcp": {
+                                    "name": "Counterparty (XCP)",
+                                    "icon": "counterparty.png",
+                                    "website": "https://counterparty.io/",
+                                    "class": "dapps",
+                                    "description": "Smart contracts en el blockchain de Bitcoin.",
+                                    "description-en": "Smart contracts en el blockchain de Bitcoin."
+                                },
+                                "part": {
+                                    "name": "Particl (PART)",
+                                    "icon": "part.png",
+                                    "website": "https://particl.io/",
+                                    "class": "private marketplace social",
+                                    "description": "Criptomoneda basada en la privacidad que ofrece marketplace y chat cifrado.",
+                                    "description-en": "Cryptocurrency based on privacy that offers marketplace and encrypted chat."
+                                },
+                                "nav": {
+                                    "name": "NAV Coin (NAV)",
+                                    "icon": "navcoin.png",
+                                    "website": "http://www.navcoin.org/",
+                                    "class": "private currency",
+                                    "description": "Criptomoneda con privacidad opcional.",
+                                    "description-en": "Cryptocurrency with optional privacy."
+                                },
+                                "pot": {
+                                    "name": "PotCoin (POT)",
+                                    "icon": "pot-64.png",
+                                    "website": "http://www.potcoin.com/",
+                                    "class": "currency",
+                                    "description": "Plataforma de pagos para la industria de la marihuana.",
+                                    "description-en": "Payment platform for the marijuana industry."
+                                },
+                                "adx": {
+                                    "name": "AdEx (ADX)",
+                                    "icon": "adx-64.png",
+                                    "website": "https://www.adex.network/",
+                                    "class": "ads exchange",
+                                    "description": "Exchange de publicidad online.",
+                                    "description-en": "Online advertising exchange."
+                                },
+                                "ubq": {
+                                    "name": "Ubiq (UBQ)",
+                                    "icon": "ubq-64.png",
+                                    "website": "https://ubiqsmart.com/",
+                                    "class": "computing dapps",
+                                    "description": "Plataforma de smart contracts donde todos los dispositivos de una red actúan como un único super-ordenador.",
+                                    "description-en": "Smart contracts platform where all the devices in a network act as a single super-computer."
+                                },
+                                "atm": {
+                                    "name": "ATMChain (ATM)",
+                                    "icon": "atm.png",
+                                    "website": "https://www.atmchain.io/",
+                                    "class": "ads",
+                                    "description": "Red de publicidad asiática.",
+                                    "description-en": "Asian advertising network."
+                                },
+                                "edg": {
+                                    "name": "Edgeless (EDG)",
+                                    "icon": "edg-64.png",
+                                    "website": "https://edgeless.io/",
+                                    "class": "gaming",
+                                    "description": "Casino descentralizado.",
+                                    "description-en": "Decentralized casino."
+                                },
+                                "lrc": {
+                                    "name": "Loopring (LRC)",
+                                    "icon": "lrc.png",
+                                    "website": "https://loopring.org",
+                                    "class": "exchange",
+                                    "description": "Exchange descentralizado y protocolo abierto.",
+                                    "description-en": "Decentralized exchange and open protocol.",
+                                    "ico-price": "0.06",
+                                    "ico-raised": "46522800"
+                                },
+                                "cnd": {
+                                    "name": "Cindicator (CND)",
+                                    "icon": "cnd.png",
+                                    "website": "https://cindicator.com/",
+                                    "class": "gaming finance",
+                                    "description": "Plataforma de predicciones, cuanto más precisas sean las predicciones de un usuario mayores ganancias obtiene.",
+                                    "description-en": "Prediction platform, the more accurate a user's predictions, the greater the profits."
+                                },
+                                "dbc": {
+                                    "name": "DeepBrain Chain",
+                                    "symbol": "DBC",
+                                    "icon": "dbc.png",
+                                    "website": "https://www.deepbrainchain.org",
+                                    "class": "computing",
+                                    "description": "Red donde nodos pueden ceder su poder computacional a empresas de Inteligencia Artificial a cambio de tokens.",
+                                    "description-en": "Network where nodes can transfer their computing power to Artificial Intelligence companies in exchange for tokens."
+                                },
+                                "gram": {
+                                    "name": "Telegram TON (GRAM)",
+                                    "symbol": "GRAM",
+                                    "icon": "ton-64.png",
+                                    "website": "https://ton.org/",
+                                    "class": "currency",
+                                    "description": "Plataforma de pagos para usuarios de la app de mensajeria Telegram.",
+                                    "description-en": "Payment plataform for users that use the app Telegram.",
+                                    "ico-price": "4",
+                                    "ico-raised": "1700000000"
+                                },
+                                "qash": {
+                                    "name": "QASH",
+                                    "symbol": "QASH",
+                                    "ico-price": "0.31",
+                                    "ico-raised": "105000000"
+                                },
+                                "bkx": {
+                                    "name": "Bankex",
+                                    "symbol": "BKX",
+                                    "ico-price": "2.83",
+                                    "ico-raised": "70600000"
+                                },
+                                "drt": {
+                                    "name": "Dom Raider Token",
+                                    "symbol": "DRT",
+                                    "ico-price": "0.12",
+                                    "ico-raised": "65890000"
+                                },
+                                "wax": {
+                                    "name": "WAX",
+                                    "symbol": "WAX",
+                                    "ico-price": "0.99",
+                                    "ico-raised": "64000000"
+                                },
+                                "nas": {
+                                    "name": "NAS",
+                                    "symbol": "NAS",
+                                    "ico-price": "2.00",
+                                    "ico-raised": "60000000"
+                                },
+                                "mgo": {
+                                    "name": "MobileGo",
+                                    "symbol": "MGO",
+                                    "ico-price": "0.76",
+                                    "ico-raised": "53000000"
+                                },
+                                "atom": {
+                                    "name": "Cosmos",
+                                    "icon": "atom-64.png",
+                                    "symbol": "ATOM",
+                                    "ico-price": "0.1",
+                                    "ico-raised": "53000000"
+                                },
+                                "latx": {
+                                    "name": "LatiumX",
+                                    "symbol": "LATX",
+                                    "ico-price": "0.06",
+                                    "ico-raised": "51578800"
+                                },
+                                "ngc": {
+                                    "name": "Naga Coin",
+                                    "symbol": "NGC",
+                                    "ico-price": "1.00",
+                                    "ico-raised": "50020960"
+                                },
+                                "prg": {
+                                    "name": "Paragon",
+                                    "symbol": "PRG",
+                                    "ico-price": "1.00",
+                                    "ico-raised": "50000000"
+                                },
+                                "eng": {
+                                    "name": "Enigma",
+                                    "symbol": "ENG",
+                                    "ico-price": "0.60",
+                                    "ico-raised": "45000000"
+                                },
+                                "idh": {
+                                    "name": "indaHash",
+                                    "symbol": "IDH",
+                                    "ico-price": "0.21",
+                                    "ico-raised": "42715825"
+                                },
+                                "snm": {
+                                    "name": "SONM",
+                                    "symbol": "ENG",
+                                    "ico-price": "0.11",
+                                    "ico-raised": "42000000"
+                                },
+                                "nom": {
+                                    "name": "Finom NOM Token",
+                                    "icon": "nom-64.jpg",
+                                    "symbol": "NOM",
+                                    "ico-price": "2.00",
+                                    "ico-raised": "41285458"
+                                },
+                                "ech": {
+                                    "name": "Etherecash",
+                                    "symbol": "ECH",
+                                    "ico-price": "0.85",
+                                    "ico-raised": "40000000"
+                                },
+                                "grid": {
+                                    "name": "GRID+",
+                                    "symbol": "GRID",
+                                    "ico-price": "0.56",
+                                    "ico-raised": "38500000"
+                                },
+                                "stx": {
+                                    "name": "Stox",
+                                    "symbol": "STX",
+                                    "ico-price": "1.50",
+                                    "ico-raised": "38000000"
+                                },
+                                "rcn": {
+                                    "name": "Ripio Credit Network",
+                                    "symbol": "RCN",
+                                    "ico-price": "0.07",
+                                    "ico-raised": "37863045"
+                                },
+                                "rlc": {
+                                    "name": "iEx.ec",
+                                    "symbol": "RLC",
+                                    "ico-price": "0.18",
+                                    "ico-raised": "36000000"
+                                },
+                                "ast": {
+                                    "name": "AirSwap",
+                                    "symbol": "AST",
+                                    "ico-price": "0.18",
+                                    "ico-raised": "36000000"
+                                },
+                                "agi": {
+                                    "name": "SingularityNET",
+                                    "symbol": "AGI",
+                                    "ico-price": "0.10",
+                                    "ico-raised": "36000000"
+                                },
+                                "c20": {
+                                    "name": "Crypto20",
+                                    "symbol": "C20",
+                                    "ico-price": "1.03",
+                                    "ico-raised": "34270000"
+                                },
+                                "fuel": {
+                                    "name": "EtherParty",
+                                    "symbol": "FUEL",
+                                    "ico-price": "0.04",
+                                    "ico-raised": "33570000"
+                                },
+                                "ukg": {
+                                    "name": "Unikoin Gold",
+                                    "symbol": "UKG",
+                                    "ico-price": "0.34",
+                                    "ico-raised": "32345171"
+                                },
+                                "amb": {
+                                    "name": "Ambrosus",
+                                    "symbol": "AMB",
+                                    "ico-price": "0.30",
+                                    "ico-raised": "32110000"
+                                },
+                                "link": {
+                                    "name": "Chain Link",
+                                    "icon": "link-64.png",
+                                    "symbol": "LINK",
+                                    "ico-price": "0.11",
+                                    "ico-raised": "32000000"
+                                },
+                                "storm": {
+                                    "name": "STORM",
+                                    "symbol": "STORM",
+                                    "ico-price": "0.02",
+                                    "ico-raised": "32000000"
+                                },
+                                "brd": {
+                                    "name": "Bread",
+                                    "symbol": "BRD",
+                                    "ico-price": "0.78",
+                                    "ico-raised": "32000000"
+                                },
+                                "utt": {
+                                    "name": "United Traders Token",
+                                    "symbol": "UTT",
+                                    "ico-price": "0.90",
+                                    "ico-raised": "32000000"
+                                },
+                                "plbt": {
+                                    "name": "Polybius",
+                                    "symbol": "PLBT",
+                                    "ico-price": "10.00",
+                                    "ico-raised": "31000000"
+                                }
+                            };
+                        </script>
+                        <script type="text/javascript" src="../../js/lang1731.js?1628160368435303516"></script>
+                        <script type="text/javascript" src="../../js/marketcaps1731.js?1628160368435303516"></script>
+                    </div><!-- .entry-content -->
+                </article><!-- .post -->
+            </main><!-- .site-main -->
+        </div><!-- .inner -->
+    </div><!-- .site-content -->
+    <footer class="site-footer">
+        <div class="inner">
+            <div class="social-links"> <a href="https://twitter.com/danniebgoode"
+                    class="icon-twitter square fill-horizontal"><span class="screen-reader-text">Twitter</span></a> <a
+                    href="https://github.com/danniebgoode" class="icon-github square fill-horizontal"><span
+                        class="screen-reader-text">GitHub</span></a> <a href="https://medium.com/@danielcalatayud"
+                    class="icon-medium square fill-horizontal"><span class="screen-reader-text">Medium</span></a> <a
+                    href="https://www.linkedin.com/in/danielcalatayud"
+                    class="icon-linkedin2 square fill-horizontal"><span class="screen-reader-text">LinkedIn</span></a>
+                <a class="icon-feed square fill-horizontal" href="../../feed.xml"><span
+                        class="screen-reader-text">RSS</span></a> </div><!-- .social-links -->
+            <div class="donate">
+                <div>Donate:</div>
+                <div> <span style='font-size:20px;'>&#8383;</span> BTC:
+                    <span><small><small>1zBENf32wsErn8TGtpGQ27yhrwEBwVsnw</small></small></span> </div>
+                <div> <img src="../../images/general/cryptocurrencies/eth-64.png" alt="Ethereum" class="small-image"
+                        title="Ethereum" ; style="width:30px;height:30px" /> ETH:
+                    <span><small><small>0x6Ad36e415EdFb4C3fcE2bfF9E01F25e7Ed56f9C1</small></small></span> </div>
+            </div>
+            <div class="site-info"> &copy; <a href="../../index.html">CRIPTOMO</a> all rights reserved. <br /> <a
+                    onclick="window.scroll({top: 0, left: 0, behavior: 'smooth'});"
+                    class="icon-chevron-up top-link square fill-horizontal"><span class="screen-reader-text">Back to the
+                        top</span></a> </div><!-- .site-info -->
+        </div><!-- .inner -->
+    </footer><!-- .site-footer -->
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = '../../../www.googletagmanager.com/gtm5445.html?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TV5P5BH');
+    </script> <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager (noscript) --> <noscript><iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-TV5P5BH" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript> <!-- End Google Tag Manager (noscript) -->
+    <script defer id="mcjs">
+        ! function (c, h, i, m, p) {
+            m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(
+                m, p)
+        }(document, "script",
+            "../../../chimpstatic.com/mcjs-connected/js/users/b9de4a6450813cafe2bddbf2b/60c797cb12a5c763c13429d62.js");
+    </script>
+    <script defer src="../../js/essentials1731.js?1628160368435303516"></script>
+    <script defer async src="../../js/tp1731.js?1628160368435303516"></script>
+</body>
+<!-- Mirrored from criptomo.com/en/marketcaps/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Aug 2021 09:57:48 GMT -->
+
+</html>
